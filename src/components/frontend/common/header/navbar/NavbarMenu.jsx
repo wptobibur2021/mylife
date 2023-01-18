@@ -23,7 +23,7 @@ const NavbarMenu = () => {
               <img className="cursor-pointer" src={searchIcon} />
             </div>
             {searchOption === true && (
-              <div className="absolute right-20 md:right-28 md:top-5">
+              <div className="absolute right-20 md:right-12 md:top-5">
                 <input className="p-1 md:py-2 md:px-5 border border-gray-100 rounded-md" />
               </div>
             )}

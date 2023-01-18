@@ -96,11 +96,11 @@ const Layouts = () => {
         <Header />
       </div>
       <div>
-        <div className="container m-auto py-10">
-          <div className="grid lg:grid-cols-5 gap-10">
+        <div className="container m-auto py-10 px-5 md:px-0">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
             <Leftsidebar />
-            <div className="col-span-4">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+            <div className="col-span-1 md:col-span-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
                 <div className="shadow-md rounded-lg p-5 bg-dashcardBg">
                   <h2 className="text-cardHead font-bold text-xl">05</h2>
                   <p className="text-grayDark">Total Accounts</p>
@@ -119,7 +119,7 @@ const Layouts = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-6 gap-10">
-                <div className="col-span-4">
+                <div className="col-span-1 md:col-span-4">
                   <div className="rounded-lg mb-10 shadow-lg bg-white p-10">
                     <div className="mb-10">
                       <h2 className="text-grayDark text-xl">
@@ -167,7 +167,7 @@ const Layouts = () => {
                     </ResponsiveContainer>
                   </div>
                 </div>
-                <div className="col-span-2 shadow-lg p-5 rounded-lg">
+                <div className="col-span-1 md:col-span-2 shadow-lg p-5 rounded-lg">
                   <div className="mb-10">
                     <h3 className=" text-xl text-grayDark font-semibold">
                       My Cards

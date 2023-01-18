@@ -1,4 +1,4 @@
-import { Button, Navbar } from "flowbite-react";
+import { Navbar } from "flowbite-react";
 import React, { useState } from "react";
 import logo from "../../../../../assets/img/Logo.png";
 import searchIcon from "../../../../../assets/img/icon/searchIcon.png";
@@ -17,7 +17,9 @@ const NavbarMenu = () => {
       <div className="container m-auto py-3">
         <Navbar>
           <Navbar.Brand href="#">
-            <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+            <Link to="/dashboard">
+              <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+            </Link>
           </Navbar.Brand>
           <div className="flex md:order-2">
             <div onClick={handleChange} className="relative">
@@ -33,12 +35,12 @@ const NavbarMenu = () => {
           <Navbar.Collapse>
             <ul className="md:flex md:gap-6 space-y-3 md:space-y-0">
               <li className="flex gap-2 items-center cursor-pointer">
-                <img src={icon1} /> <p>Banking</p>
+                <Link to="/dashboard">
+                  <p>Dashboard</p>
+                </Link>
               </li>
               <li className="flex gap-2 items-center cursor-pointer">
-                <Link to="/dashboard">
-                  <img src={icon1} /> <p>Banking</p>
-                </Link>
+                <img src={icon1} /> <p>Banking</p>
               </li>
               <li className="flex gap-2 items-center cursor-pointer">
                 <img src={icon2} /> <p>Insurance</p>

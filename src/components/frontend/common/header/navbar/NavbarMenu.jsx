@@ -5,6 +5,7 @@ import searchIcon from "../../../../../assets/img/icon/searchIcon.png";
 import icon1 from "../../../../../assets/img/icon/MenuIcon.png";
 import icon2 from "../../../../../assets/img/icon/user.png";
 import icon3 from "../../../../../assets/img/icon/check.png";
+import { Link } from "react-router-dom";
 const NavbarMenu = () => {
   const [searchOption, setSearchOption] = useState(false);
   const handleChange = () => {
@@ -33,6 +34,11 @@ const NavbarMenu = () => {
             <ul className="md:flex md:gap-6 space-y-3 md:space-y-0">
               <li className="flex gap-2 items-center cursor-pointer">
                 <img src={icon1} /> <p>Banking</p>
+              </li>
+              <li className="flex gap-2 items-center cursor-pointer">
+                <Link to="/dashboard">
+                  <img src={icon1} /> <p>Banking</p>
+                </Link>
               </li>
               <li className="flex gap-2 items-center cursor-pointer">
                 <img src={icon2} /> <p>Insurance</p>
